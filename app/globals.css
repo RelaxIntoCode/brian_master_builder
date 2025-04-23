@@ -1,6 +1,7 @@
 :root {
   --col-primary: rgb(104, 105, 85);
   --col-secondary: rgb(236, 234, 218);
+  --white: #fff;
   --font-large: 18px;
   --font-med: 16px;
   --font-sm: 14px;
