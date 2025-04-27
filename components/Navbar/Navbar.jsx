@@ -9,7 +9,14 @@ function Navbar() {
     <nav className={styles.nav}>
       <div className={styles.navSection}>
         <Link href="/">
-          <Image src="/BBMB.png" alt="BBMB logo" width={60} height={60} />
+          <div className={styles.logoContainer}>
+            <Image
+              src="/logo-brian.png"
+              alt="Builder logo"
+              fill
+              style={{ objectFit: "contain" }}
+            />
+          </div>
         </Link>
       </div>
       <div className={styles.navSection}>

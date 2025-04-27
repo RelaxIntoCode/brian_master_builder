@@ -45,6 +45,12 @@
   margin-right: 10px;
 }
 
+.logoContainer {
+  position: relative;
+  width: 70px;
+  height: 70px;
+}
+
 .active {
   font-weight: var(--font-bold);
 }
