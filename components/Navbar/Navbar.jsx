@@ -44,32 +44,6 @@ function Navbar() {
         </Link>
       </div>
       <div className={styles.navSection}>
-        {/* <div className={styles.navLink}>
-          <Link
-            href="/contact"
-            className={pathname === "/contact" ? styles.active : ""}
-          >
-            Contact Us
-          </Link>
-          <Link
-            href="/about-us"
-            className={pathname === "/about-us" ? styles.active : ""}
-          >
-            About Us
-          </Link>
-        </div> */}
-        {/* <div>
-          <select name="" id="" onChange={handleChange}>
-            <option value="">Links</option>
-            {links.map((link) => {
-              return (
-                <option key={link.id} value={link.link}>
-                  {link.title}
-                </option>
-              );
-            })}
-          </select>
-        </div> */}
         <div
           className={styles.linksContainer}
           onClick={() => setShowLinks(!showLinks)}
@@ -85,14 +59,29 @@ function Navbar() {
         <div
           className={`${styles.dropdown} ${showLinks ? styles.translate : ""}`}
         >
-          <div>
-            <p>Contact Us</p>
+          <div
+            className={styles.dropItem}
+            onClick={() => setShowLinks(!showLinks)}
+          >
+            <Link href="/contact">
+              <p>Contact Us</p>
+            </Link>
           </div>
-          <div>
-            <p>About Us</p>
+          <div
+            className={styles.dropItem}
+            onClick={() => setShowLinks(!showLinks)}
+          >
+            <Link href="/about-us">
+              <p>About Us</p>
+            </Link>
           </div>
-          <div>
-            <p>Gallery</p>
+          <div
+            className={styles.dropItem}
+            onClick={() => setShowLinks(!showLinks)}
+          >
+            <Link href="/gallery">
+              <p>Gallery</p>
+            </Link>
           </div>
         </div>
       </div>
