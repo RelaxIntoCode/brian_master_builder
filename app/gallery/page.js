@@ -1,4 +1,10 @@
+import GalleryList from "@/components/GalleryList/GalleryList";
+
 function GalleryPage() {
-  return <div>GalleryPage</div>;
+  return (
+    <div>
+      <GalleryList />
+    </div>
+  );
 }
 export default GalleryPage;

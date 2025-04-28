@@ -4,6 +4,7 @@
   height: 70px;
   /* border-bottom: 2px solid var(--col-primary); */
   width: 100%;
+  background-color: var(--col-secondary);
 }
 
 .navSection:nth-child(1) {
@@ -63,6 +64,10 @@
 .linksContainer svg {
   font-size: 22px;
   transition: transform 0.3s ease;
+}
+
+.linksContainer p {
+  font-size: var(--font-sm);
 }
 
 .dropdown {
@@ -141,6 +146,9 @@
     left: 13.5%;
     top: 193%;
   }
+  .linksContainer p {
+    font-size: var(--font-med);
+  }
 }
 @media screen and (min-width: 1024px) {
   .navLink a,
@@ -154,10 +162,13 @@
     left: 22.5%;
     top: 193%;
   }
+  .linksContainer p {
+    font-size: var(--font-large);
+  }
 }
 @media screen and (min-width: 1300px) {
   .dropdown {
     left: 32%;
-    top: 173%;
+    top: 194%;
   }
 }
